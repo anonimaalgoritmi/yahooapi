@@ -40,21 +40,5 @@ try:
             keys_iterator = iter(symbol_data.keys())
             writer.writerow(dict([(next(keys_iterator), ts), (next(keys_iterator), o), (next(keys_iterator), h), (next(keys_iterator), l), (next(keys_iterator), c), (next(keys_iterator), v)]))
 
-        #for i in range(lungh):
-         #   tupla = []
-          #  tupla.append(first_value[i])
-           # tupla.append(second_value[i])
-            #tupla.append(third_value[i])
-            #print(tupla)
-            #writer.writerow(tupla)
-
 except IOError:
     print("I/O error")
-
-#with open("Output.json", "w") as text_file:
-#    print(symbol_data, file=text_file)
-#with open('Output.json') as jsonfile:
-#    data = json.load(jsonfile)
-
-#   df = pd.read_json(r'Output.json')
-#    df.to_csv(r'Ouput.csv', index = None)
